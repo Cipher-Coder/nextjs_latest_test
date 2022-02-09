@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Footer from '../components/Footer'
+import Button from '@nextui-org/react/button'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -46,9 +47,9 @@ export default function Home() {
           </a>
         </div>
         <div>
-          <button type='button' className='btn btn-primary mt-5'>
+          <Button type='button' className='btn btn-primary mt-5'>
             Click Here
-          </button>
+          </Button>
         </div>
       </main>
       <Footer />

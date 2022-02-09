@@ -1,14 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.css'
+import { NextUIProvider } from '@nextui-org/react'
 import '../styles/globals.css'
 
-import { useEffect } from 'react'
-
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    import('bootstrap/dist/js/bootstrap')
-  }, [])
-
-  return <Component {...pageProps} />
+  return (
+    <NextUIProvider>
+      <Component {...pageProps} />
+    </NextUIProvider>
+  )
 }
 
 export default MyApp
